@@ -50,7 +50,6 @@
 html,
 body {
   max-width: 100vw;
-  max-width: var(--max-width);
   padding: .8rem;
   overflow-x: hidden;
 }
@@ -60,4 +59,21 @@ body {
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, .035) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, .035) 1px, transparent 1px);
+  max-width: --var(--max-width);
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  body {
+    background-size: 32px 32px;
+  }
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+  body {
+    background-size: 64px 64px;
+  }
 }
